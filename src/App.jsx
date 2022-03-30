@@ -1,7 +1,8 @@
 import { Container, Grid } from '@mui/material'
 import Typography from '@mui/material/Typography';
-function App() {
+import Form from './components/Form'
 
+function App() {
   return (
 		<Container>
 			<header>
@@ -9,6 +10,17 @@ function App() {
         	Find News
       	</Typography>
 			</header>
+
+			<Grid
+				container
+				direction="row"
+				justifyContent="center"
+				alingItems="center"
+			>
+				<Grid item  xs={12} md={6} lg={4}>
+					<Form />
+				</Grid>
+			</Grid>
 		</Container>
   )
 }
